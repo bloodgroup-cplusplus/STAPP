@@ -11,12 +11,12 @@ const Stack=createStackNavigator();
 
 export default function App() {
   return (
-    <TailwindProvider>
     <NavigationContainer>
+    <TailwindProvider>
       <Stack.Navigator>
       <Stack.Screen name="Login" component={LoginScreen}/>
       </Stack.Navigator>
-   </NavigationContainer>
    </TailwindProvider>
+   </NavigationContainer>
   );
 }
